@@ -84,7 +84,7 @@
     <style>
 
         button:hover {
-            background-color:green;
+            background-color:red;
         }
 	    
 	.main-nav-dropdown{	
@@ -5387,6 +5387,17 @@
   </script>
   <noscript><p><img alt="Clicky" width="1" height="1" src="../in.getclicky.com/100717250ns.gif" /></p></noscript>
 
+<script>
+$(document).ready(function(){
+  $('.main-nav-dropdown__item').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+</script>
+
+	
     </body>
 
 <!-- Mirrored from www.classcentral.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Mar 2023 08:27:30 GMT -->
