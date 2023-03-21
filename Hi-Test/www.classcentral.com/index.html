@@ -84,7 +84,7 @@
     <style>
 
         button:hover {
-            background-color:blue;
+            background-color:red;
         }
 	    
 	.main-nav-dropdown{	
@@ -100,7 +100,7 @@
 
 
 	    }
- 	.MahdiRanking:hover .imageone {		
+ 	.main-nav-dropdown__rankings:hover .imageone {		
 		display:block;
 	}
 
@@ -235,7 +235,7 @@
             
     <ul class="list-no-style">
             <li class="main-nav-dropdown__item">
-	    	<li class="MahdiRanking">
+
         <a
           class="main-nav-dropdown__item-control color-charcoal"
           href="rankings.html"
@@ -250,7 +250,7 @@
                           <span class="main-nav-dropdown__item-icon icon-chevron-right-charcoal icon-small"></span>
                               </a>
       </li>
-      </li>
+
                 <li class="main-nav-dropdown__item">
         <a
           class="main-nav-dropdown__item-control color-charcoal"
@@ -559,7 +559,13 @@
        
     <div class="main-nav-dropdown__subsection js-main-nav-subsection" data-list-id="rankings" hidden>
   <div class="main-nav-dropdown__subsection-header large-up-hidden">
+	  
     <button
+      class="main-nav-dropdown__rankings"
+    </button>
+	  
+	  
+     <button
       aria-label="Back to main menu"
       data-name="MAIN_NAV_SUBSECTION_BACK"
       class="main-nav-dropdown__subsection-back-button"
